@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayis-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  font-family: "League Spartan", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./images/bg-pattern-top-desktop.svg");
+  background-repeat: no-repeat;
+}
+
+.parent_container {
+  background-image: url("./images/bg-pattern-bottom-desktop.svg");
+  background-position: bottom -65px right -49px;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 9.5% auto;
+}
+
+.product_love h1 {
+  font-size: 60px;
+  font-weight: 700;
+  width: 35%;
+  margin: -3% 0% 0% 10%;
+  line-height: 50px;
+  color: var(--Very-Dark-Magenta);
+}
+
+.product_love p {
+  font-size: 20px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+  width: 33%;
+  color: var(--Dark-Grayis-Magenta);
+  margin: 3% 0px 0px 10%;
+}
+
+.product_rating {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: -15% 50% 0% 53%;
+  font-size: 28px;
+}
+
+.product_rating img {
+  margin: 0px 4px;
+}
+
+.product_rating h6 {
+  margin-left: 15px;
+}
+
+#rating1 {
+  background-color: var(--Light-Grayish-Magenta);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 15px 50px 20px 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  color: var(--Very-Dark-Magenta);
+}
+
+#rating2 {
+  background-color: var(--Light-Grayish-Magenta);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 102%;
+  padding: 15px 50px 20px 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  border-radius: 10px;
+  color: var(--Very-Dark-Magenta);
+}
+
+#rating3 {
+  border-radius: 10px;
+  background-color: var(--Light-Grayish-Magenta);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 102%;
+  padding: 15px 50px 20px 20px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  border-radius: 10px;
+  color: var(--Very-Dark-Magenta);
+}
+
+.product_feedbaack {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.product_feedbaack img {
+  border-radius: 25px;
+  margin-right: 20px;
+}
+
+.product_feedbaack p {
+  margin: 25px 0px 0px 0px;
+  line-height: 25px;
+  width: 104%;
+  font-size: 17px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+  color: var(--Light-Grayish-Magenta);
+}
+
+.product_feedbaack h6 {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--Soft-Pink);
+}
+
+#user1 {
+  background-color: var(--Very-Dark-Magenta);
+  color: var(--White);
+  width: 290px;
+  height: 180px;
+  margin: 6% 0% 0% 10%;
+  padding: 3%;
+  border-radius: 10px;
+}
+
+#user2 {
+  background-color: var(--Very-Dark-Magenta);
+  color: var(--White);
+  width: 290px;
+  height: 170px;
+  margin: 8% 2% 0% 2%;
+  padding: 3%;
+  border-radius: 10px;
+}
+
+#user3 {
+  background-color: var(--Very-Dark-Magenta);
+  color: var(--White);
+  width: 290px;
+  height: 170px;
+  margin: 10% 10% 0% 0%;
+  padding: 3%;
+  border-radius: 10px;
+}
+
+.product_feedbaack .image1,
+.image2,
+.image3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+  font-size: 18px;
+}
+
+@media (min-width: 375px) and (max-width: 500px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-image: url(./images/bg-pattern-top-mobile.svg);
+    width: 350px;
+  }
+
+  .parent_container {
+    background-image: url(./images/bg-pattern-bottom-mobile.svg);
+    background-position: bottom -10% right 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product_love {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .product_love h1 {
+    font-size: 35px;
+    line-height: 25px;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .product_love p {
+    width: 375px;
+    margin-bottom: 20px;
+  }
+
+  .product_rating {
+    width: 100%;
+    margin: 2% 5%;
+    align-items: center;
+  }
+
+  #rating1 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+  }
+
+  #rating2 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+    margin: 0px;
+  }
+
+  #rating3 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+  }
+
+  .product_feedbaack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #user1 {
+    padding: 0;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+  }
+
+  #user2 {
+    margin: 20px 0px 0px 40px;
+    padding: 0;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+  }
+
+  #user3 {
+    margin: 20px 0px 50px 40px;
+    padding: 0;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+  }
+}
